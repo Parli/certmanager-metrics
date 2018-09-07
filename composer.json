@@ -1,0 +1,23 @@
+{
+    "name": "firehed/certstatus",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Eric Stern",
+            "email": "eric@slant.co"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Firehed\\CertStatus\\Endpoints\\": "src/Endpoints",
+        "Kubernetes\\": "src/Kubernetes"
+      }
+    },
+    "require": {
+        "react/http": "^0.8.3",
+        "firehed/api": "^3.1",
+        "firehed/inputobjects": "^3.2",
+        "firehed/simplelogger": "^2.1",
+        "php-di/php-di": "^6.0"
+    }
+}

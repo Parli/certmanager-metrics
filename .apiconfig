@@ -1,0 +1,6 @@
+{
+    "namespace": "Firehed\\CertStatus\\Endpoints",
+    "source": "src/Endpoints",
+    "webroot": "public",
+    "container": "config.php"
+}
