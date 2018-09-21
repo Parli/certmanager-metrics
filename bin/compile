@@ -1,0 +1,5 @@
+#!/usr/bin/env php
+<?php
+$base = dirname(__DIR__);
+include $base . '/bootstrap.php';
+include $base . '/config.php';

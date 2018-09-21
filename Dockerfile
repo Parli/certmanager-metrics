@@ -19,4 +19,5 @@ WORKDIR /app
 COPY --from=dependencies /deps/vendor ./vendor
 COPY . .
 RUN vendor/bin/generate_endpoint_list
+RUN ENVIRONMENT=build bin/compile
 CMD php index.php
