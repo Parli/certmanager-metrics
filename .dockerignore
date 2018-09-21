@@ -4,3 +4,4 @@ Dockerfile
 
 /vendor/
 __*__.*
+CompiledContainer.php
