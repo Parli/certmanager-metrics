@@ -1,12 +1,15 @@
 <?php
 declare(strict_types=1);
 
+use function DI\autowire;
 use Firehed\API;
+use Firehed\CertStatus\Endpoints;
 use Kubernetes\Api as KubeAPI;
 use Psr\Http\Message\ResponseInterface;
 
 $builder = new DI\ContainerBuilder();
-$compile = false;
+$env = getenv('ENVIRONMENT');
+$compile = ($env && $env !== 'development');
 if ($compile) {
     $builder->enableCompilation('.');
 }
@@ -31,6 +34,9 @@ $defs = [
             return new Kubernetes\LocalProxy('http://localhost:8001');
         }
     },
+
+    Endpoints\Healthz::class => autowire(),
+    Endpoints\Metrics::class => autowire(),
 ];
 
 $builder->addDefinitions($defs);
