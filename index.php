@@ -19,7 +19,6 @@ $port = getenv('PORT') ?: 8080;
 $loop = React\EventLoop\Factory::create();
 
 $server = new React\Http\Server(function (ServerRequestInterface $request) use ($dispatcher) {
-    echo $request->getMethod() . ' ' . $request->getUri()->getPath() . "\n";
     $dispatcher->setRequest($request);
     return $dispatcher->dispatch();
 });
