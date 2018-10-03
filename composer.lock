@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "485c22fc3633c1a9c73db7b8245dfd4d",
+    "content-hash": "4c70a825d15c1a9ef8560747eb54e58a",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -51,16 +51,16 @@
         },
         {
             "name": "firehed/api",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Firehed/api.git",
-                "reference": "ffa5ac214e249805158f3a58fd619efd9da969a6"
+                "reference": "a502c134a20abd664c3511fcaa0716cfcc5f68ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Firehed/api/zipball/ffa5ac214e249805158f3a58fd619efd9da969a6",
-                "reference": "ffa5ac214e249805158f3a58fd619efd9da969a6",
+                "url": "https://api.github.com/repos/Firehed/api/zipball/a502c134a20abd664c3511fcaa0716cfcc5f68ba",
+                "reference": "a502c134a20abd664c3511fcaa0716cfcc5f68ba",
                 "shasum": ""
             },
             "require": {
@@ -110,7 +110,7 @@
                     "email": "eric@ericstern.com"
                 }
             ],
-            "time": "2018-07-02T01:37:44+00:00"
+            "time": "2018-09-19T21:56:17+00:00"
         },
         {
             "name": "firehed/common",
@@ -154,16 +154,16 @@
         },
         {
             "name": "firehed/input",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Firehed/input.git",
-                "reference": "1781c1a8b77407dc45a448a62ebeac65ce9deec4"
+                "reference": "06656dcc97433069bcdf9076db3958f2e26e0ccc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Firehed/input/zipball/1781c1a8b77407dc45a448a62ebeac65ce9deec4",
-                "reference": "1781c1a8b77407dc45a448a62ebeac65ce9deec4",
+                "url": "https://api.github.com/repos/Firehed/input/zipball/06656dcc97433069bcdf9076db3958f2e26e0ccc",
+                "reference": "06656dcc97433069bcdf9076db3958f2e26e0ccc",
                 "shasum": ""
             },
             "require": {
@@ -193,20 +193,20 @@
                 }
             ],
             "description": "PHP Input Handling Tools",
-            "time": "2018-05-16T04:54:47+00:00"
+            "time": "2018-09-20T17:34:22+00:00"
         },
         {
             "name": "firehed/inputobjects",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Firehed/inputobjects.git",
-                "reference": "d94002bbb48438449b44b6984d4d7504413c3cad"
+                "reference": "ea4f20762b7872fcf1d29df5dec11c9bc9b27979"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Firehed/inputobjects/zipball/d94002bbb48438449b44b6984d4d7504413c3cad",
-                "reference": "d94002bbb48438449b44b6984d4d7504413c3cad",
+                "url": "https://api.github.com/repos/Firehed/inputobjects/zipball/ea4f20762b7872fcf1d29df5dec11c9bc9b27979",
+                "reference": "ea4f20762b7872fcf1d29df5dec11c9bc9b27979",
                 "shasum": ""
             },
             "require": {
@@ -241,7 +241,49 @@
                 }
             ],
             "description": "A collection of InputObjects to be used with firehed/input",
-            "time": "2018-08-01T18:49:07+00:00"
+            "time": "2018-09-11T17:44:01+00:00"
+        },
+        {
+            "name": "firehed/kube-sdk",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Firehed/php-kubesdk.git",
+                "reference": "acdabfe44cc866b3b60be5528d1631b17d1988cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Firehed/php-kubesdk/zipball/acdabfe44cc866b3b60be5528d1631b17d1988cb",
+                "reference": "acdabfe44cc866b3b60be5528d1631b17d1988cb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.10",
+                "phpstan/phpstan-phpunit": "^0.10",
+                "phpunit/phpunit": "^7.0",
+                "squizlabs/php_codesniffer": "^3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kubernetes\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eric Stern",
+                    "email": "eric@slant.co"
+                }
+            ],
+            "description": "SDK for interacting with the Kubernetes API",
+            "time": "2018-10-03T17:56:27+00:00"
         },
         {
             "name": "firehed/simplelogger",
@@ -654,16 +696,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.0.3",
+            "version": "v4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "bd088dc940a418f09cda079a9b5c7c478890fb8d"
+                "reference": "fa6ee28600d21d49b2b4e1006b48426cec8e579c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd088dc940a418f09cda079a9b5c7c478890fb8d",
-                "reference": "bd088dc940a418f09cda079a9b5c7c478890fb8d",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/fa6ee28600d21d49b2b4e1006b48426cec8e579c",
+                "reference": "fa6ee28600d21d49b2b4e1006b48426cec8e579c",
                 "shasum": ""
             },
             "require": {
@@ -701,7 +743,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-07-15T17:25:16+00:00"
+            "time": "2018-09-18T07:03:24+00:00"
         },
         {
             "name": "php-di/invoker",
@@ -748,16 +790,16 @@
         },
         {
             "name": "php-di/php-di",
-            "version": "6.0.4",
+            "version": "6.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI/PHP-DI.git",
-                "reference": "2c7a3a6b7b6c5dbe299a7a0cde386cea5d095eb3"
+                "reference": "5e8b809960d5c3bfa096a90da9a78650e80b1f0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/2c7a3a6b7b6c5dbe299a7a0cde386cea5d095eb3",
-                "reference": "2c7a3a6b7b6c5dbe299a7a0cde386cea5d095eb3",
+                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/5e8b809960d5c3bfa096a90da9a78650e80b1f0e",
+                "reference": "5e8b809960d5c3bfa096a90da9a78650e80b1f0e",
                 "shasum": ""
             },
             "require": {
@@ -807,7 +849,7 @@
                 "ioc",
                 "psr11"
             ],
-            "time": "2018-08-31T21:13:20+00:00"
+            "time": "2018-09-17T15:34:44+00:00"
         },
         {
             "name": "php-di/phpdoc-reader",
@@ -1429,16 +1471,16 @@
         },
         {
             "name": "react/socket",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/socket.git",
-                "reference": "476e2644a634c6301b8111e6d22a61679e6e6bd0"
+                "reference": "34381d9282d12670eb56b45981aad82e033ed58f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/socket/zipball/476e2644a634c6301b8111e6d22a61679e6e6bd0",
-                "reference": "476e2644a634c6301b8111e6d22a61679e6e6bd0",
+                "url": "https://api.github.com/repos/reactphp/socket/zipball/34381d9282d12670eb56b45981aad82e033ed58f",
+                "reference": "34381d9282d12670eb56b45981aad82e033ed58f",
                 "shasum": ""
             },
             "require": {
@@ -1472,7 +1514,7 @@
                 "reactphp",
                 "stream"
             ],
-            "time": "2018-07-11T14:38:22+00:00"
+            "time": "2018-10-01T12:20:53+00:00"
         },
         {
             "name": "react/stream",
