@@ -2,6 +2,8 @@
 
 This is a simple tool to export additional metrics from [cert-manager](https://github.com/jetstack/cert-manager).
 
+[Docker Hub](https://hub.docker.com/r/parli/certmanager-metrics/)
+
 **Important**: this is a _very_ early release.
 While it's probably stable, you should treat it as prototype-quality.
 We will make reasonable efforts to avoid breaking changes (including renaming or otherwise altering metrics), but can't promise anything at this time.
