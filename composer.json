@@ -18,7 +18,7 @@
     "require": {
         "firehed/api": "^3.1",
         "firehed/inputobjects": "^3.2",
-        "firehed/kube-sdk": "^1.0",
+        "firehed/kube-sdk": "^1.1",
         "firehed/simplelogger": "^2.1",
         "jimdo/prometheus_client_php": "^0.9.1",
         "php-di/php-di": "^6.0",
