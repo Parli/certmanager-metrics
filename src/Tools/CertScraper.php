@@ -19,11 +19,11 @@ class CertScraper
      */
     public function getAllCertificates(): array
     {
-        $version = $this->api->get('/apis/certmanager.k8s.io')['preferredVersion']['version'];
-        $base = sprintf('/apis/certmanager.k8s.io/%s', $version);
+        $version = $this->api->get('/apis/cert-manager.io')['preferredVersion']['version'];
+        $base = sprintf('/apis/cert-manager.io/%s', $version);
         $certs = $this->api->get($base.'/certificates')['items'];
         return array_map(function ($cert) {
-            return new Certificate($this->api, $cert);
+            return new Certificate($cert);
         }, $certs);
     }
 
