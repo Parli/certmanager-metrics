@@ -1,7 +1,6 @@
-FROM composer:latest as dependencies
+FROM composer:1.9.1 as dependencies
 WORKDIR /deps
-COPY composer.json .
-COPY composer.lock .
+COPY composer.json composer.lock ./
 RUN composer install \
     --ignore-platform-reqs \
     --no-dev \
@@ -11,7 +10,7 @@ RUN composer install \
     --prefer-dist \
     ;
 
-FROM php:7.2.9-cli-alpine as env
+FROM php:7.4.0-cli-alpine as env
 RUN docker-php-ext-install \
     sockets
 
