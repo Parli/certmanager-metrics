@@ -9,14 +9,18 @@ While it's probably stable, you should treat it as prototype-quality.
 We will make reasonable efforts to avoid breaking changes (including renaming or otherwise altering metrics), but can't promise anything at this time.
 
 _Additionally_, this re-uses the service account and role bindings from cert-manager.
-This is (in the current implementation) necessary to read the certificates to parse their expiration dates.
+~~This is (in the current implementation) necessary to read the certificates to parse their expiration dates.~~ This needs to be updated, since only access to the Certificate resources are necessary (which do _not_ contain private keys).
 However, that does mean that **by default it has pretty deep access to Kubernetes resources, including secrets** (which is where the certificates are stored).
 A future version should reduce the access requirements, but like anything else you should be weary about deploying third-party code that is being granted access to Kubernetes resources.
 
 ## Quick Start
 
-This assumes you already have cert-manager up and running, inside the recommended `cert-manager` namespace with its RBAC settings.
-Further, this deployment uses Datadog's autodiscovery to have data scraped with Prometheus.
+Requirements:
+
+- `cert-manager` at v0.11.0 or later, deployed to your cluster (for older versions, use certamanager-metrics v0.0.3 or earlier)
+- Basic familiarity with Prometheus scraping configuration
+
+The following example uses Datadog's autodiscovery to scrape the Prometheus metrics.
 Other Prometheus auto-discovery should be easy to configure, and we welcome contributions to improve this.
 
 Apply the following deployment manifest:
